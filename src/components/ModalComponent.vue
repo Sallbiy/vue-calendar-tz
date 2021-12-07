@@ -67,7 +67,7 @@ export default {
       this.show = false;
     },
     async save() {
-      this.addPost({name: this.todoName, deadline: this.date.toISOString()})
+      this.addPost({name: this.todoName,calendar_id: this.$attrs.calendarId,deadline: this.date.toISOString()})
       this.todoName = ''
     },
   },
